@@ -1,3 +1,5 @@
+package Reto_java1;
+
 public class Reto_java_1 {
 
     public static void main(String[] args) {
@@ -16,7 +18,6 @@ public class Reto_java_1 {
         2. Cree un programa en Java que solicite al usuario una letra (x) y compruebe si es una vocal o cualquier otro símbolo. El programa debe mostrar por pantalla "Vocal" si la entrada es una vocal (a, e, i, o, u) y "Otro símbolo" si es cualquier otro carácter.
 
         3. Escribe un programa en Java que solicite al usuario ingresar tres números (x, y, z) y determine cuál de ellos es el número más grande. Luego, muestra ese número en la pantalla.
-
 
         4. Escribe un programa en Java que actúe como una calculadora básica. El programa solicitará al usuario ingresar dos números y una operación matemática (+, -, x, /). Luego, calculará la operación seleccionada y mostrará el resultado en la pantalla.
 
