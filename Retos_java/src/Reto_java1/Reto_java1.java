@@ -140,16 +140,93 @@ public class Reto_java1 {
 
 //      6. Escribe un programa en Java que muestre los números impares desde x hasta y en orden descendente.
 
+        System.out.println("Introduce un número:");
+        int impares_x = scanner.nextInt();
+        System.out.println("Introduce otro número mayor que el anterior:");
+        int impares_y = scanner.nextInt();
 
-
+        for (;impares_x <= impares_y; impares_y--) {
+            if (impares_y % 2 == 1) {
+                System.out.println(impares_y);
+            }
+        }
 
 //      7. Crea un programa en Java que simule una caja registradora de supermercado para devolver el cambio de una compra.
 //      Solicita la cantidad total de dinero que tienes en la caja registradora (x) y el valor de la compra (y) como un número entero.
 //      Debes utilizar billetes de 100, 50, 20, 10, 5, 2 o 1 y devolver el cambio utilizando primero los billetes de mayor valor.
 
+        System.out.println("¿Cuánto dinero hay en la caja registradora?");
+        int caja_registradora = scanner.nextInt();
+        System.out.println("¿Cuál es el valor de la compra?");
+        int valor_compra = scanner.nextInt();
 
+        int cambio = caja_registradora - valor_compra;
+
+        System.out.println("Tu cambio es de " + cambio + " euros.");
+
+        int billetes_100 = 0;
+        while (cambio >= 100) {
+            billetes_100 ++;
+            cambio = cambio -100;
+        }
+        if (billetes_100 > 0) {
+            System.out.println(billetes_100 + " billete(s) de 100€.");
+        }
+
+        int billetes_50 = 0;
+        while (cambio >= 50) {
+            billetes_50 ++;
+            cambio = cambio -50;
+        }
+        if (billetes_50 > 0) {
+            System.out.println(billetes_50 + " billete(s) de 50€.");
+        }
+
+        int billetes_20 = 0;
+        while (cambio >= 20) {
+            billetes_20 ++;
+            cambio = cambio -20;
+        }
+        if (billetes_20 > 0) {
+            System.out.println(billetes_20 + " billete(s) de 20€.");
+        }
+
+        int billetes_10 = 0;
+        while (cambio >= 10) {
+            billetes_10 ++;
+            cambio = cambio -10;
+        }
+        if (billetes_10 > 0) {
+            System.out.println(billetes_10 + " billete(s) de 10€.");
+        }
+
+        int billetes_5 = 0;
+        while (cambio >= 5) {
+            billetes_5 ++;
+            cambio = cambio -5;
+        }
+        if (billetes_5 > 0) {
+            System.out.println(billetes_5 + " billete(s) de 5€.");
+        }
+
+        int monedas_2 = 0;
+        while (cambio >= 2) {
+            monedas_2 ++;
+            cambio = cambio -2;
+        }
+        if (monedas_2 > 0) {
+            System.out.println(monedas_2 + " moneda(s) de 2€.");
+        }
+
+        int monedas_1 = 0;
+        while (cambio >= 1) {
+            monedas_1 ++;
+            cambio = cambio -1;
+        }
+        if (monedas_1 > 0) {
+            System.out.println(monedas_1 + " moneda(s) de 1€.");
+        }
 
         scanner.close();
     }
-
 }
