@@ -228,5 +228,6 @@ public class Reto_java1 {
         }
 
         scanner.close();
+
     }
 }
