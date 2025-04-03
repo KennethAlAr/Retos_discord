@@ -36,7 +36,7 @@ public class Reto_java2 {
 
         for (int i= 0;i < 12; i++){
             System.out.println(meses[i]);
-            if (meses[i] == "febrero") {
+            if (meses[i].equals("febrero")) {
                 for (int j = 1; j <= 28; j++) {
                     System.out.print(j + "\t" );
                     if (j%7 == 0 && j != 28){
@@ -45,7 +45,7 @@ public class Reto_java2 {
                 }
             }
             for (int mes = 0; mes<meses_30_dias.length; mes++){
-                if (meses_30_dias[mes] == meses[i]) {
+                if (meses_30_dias[mes].equals(meses[i])) {
                     for (int j = 1; j <= 30; j++) {
                         System.out.print(j + "\t" );
                         if (j%7 == 0){
@@ -55,7 +55,7 @@ public class Reto_java2 {
                 }
             }
             for (int mes = 0; mes<meses_31_dias.length; mes++){
-                if (meses_31_dias[mes] == meses[i]) {
+                if (meses_31_dias[mes].equals(meses[i])) {
                     for (int j = 1; j <= 31; j++) {
                         System.out.print(j + "\t" );
                         if (j%7 == 0){
