@@ -116,7 +116,7 @@ public class Reto_java7 {
                 System.out.println("(4) " + "~".repeat(posicion_4) + "(@)_´o´" + "_".repeat(50 - posicion_4) + "|| Speedy McSluggish");
             }
             System.out.println("\n\n");
-            Thread.sleep(10);
+            Thread.sleep(1000);
         }
 
         List<String> listaCampeones = new ArrayList<>();
