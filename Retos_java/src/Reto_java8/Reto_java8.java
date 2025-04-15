@@ -27,7 +27,7 @@ public class Reto_java8 {
         } else if (nombre.charAt(0) == 'A') {
             System.out.println("¡Hola, Asombroso/a " + nombre_fromateado);
         } else if (nombre_fromateado.length() > 7) {
-            System.out.println("¡Vaya, " + nombre_fromateado + ", ¡qué nombre tan largo y sofisticado!");
+            System.out.println("¡Vaya, " + nombre_fromateado + "! ¡que nombre tan largo y sofisticado!");
         } else if (nombre_fromateado.equals("Jaimito")) {
             System.out.println("Jaimito! ¿Cómo se dice 'perro' en inglés?");
             System.out.println("Dog");
