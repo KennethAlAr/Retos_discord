@@ -38,5 +38,7 @@ public class Reto_java8 {
             System.out.println("Hola, " + nombre_fromateado);
         }
 
+        sc.close();
+
     }
 }
