@@ -38,12 +38,10 @@ public class Reto_java15 {
 
                 for (int i = 0; i < password.length(); i++) {
                     if (password.charAt(i) == Character.toUpperCase(password.charAt(i))
-                            && !listaNumeros.contains(password.charAt(i))
-                            && !listaSimbolos.contains(password.charAt(i))) {
+                            && Character.isLetter(password.charAt(i))) {
                         contadorMayusculas++;
                     } else if (password.charAt(i) == Character.toLowerCase(password.charAt(i))
-                            && !listaNumeros.contains(password.charAt(i))
-                            && !listaSimbolos.contains(password.charAt(i))) {
+                            && Character.isLetter(password.charAt(i))) {
                         contadorMinusculas++;
                     } else if (listaNumeros.contains(password.charAt(i))) {
                         contadorNumeros++;
