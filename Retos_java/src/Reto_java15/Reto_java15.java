@@ -20,8 +20,6 @@ public class Reto_java15 {
 
         Scanner sc = new Scanner(System.in);
 
-//        System.out.println("Introduce tu contraseña y verificaremos que sea segura y 'GitFree'");
-//        String password = sc.nextLine();
         boolean activador = false;
 
         while (!activador) {
