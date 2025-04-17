@@ -66,9 +66,9 @@ public class Reto_java17 {
                     int numeroVocales = 0;
                     int numeroConsonantes = 0;
                     for (int j = 0; j < estrofa.length(); j++) {
-                        if (vocales.contains(estrofa.charAt(j))) {
+                        if (vocales.contains(estrofa.toLowerCase().charAt(j)) && Character.isLetter(estrofa.charAt(j))) {
                             numeroVocales++;
-                        } else {
+                        } else if (Character.isLetter(estrofa.charAt(j))){
                             numeroConsonantes++;
                         }
                     }
